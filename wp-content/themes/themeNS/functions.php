@@ -1,5 +1,7 @@
 <?php
 
+/////// post type : PODCAST 
+
 function create_posttype() {
 register_post_type( 'Podcast',
 // CPT Options
