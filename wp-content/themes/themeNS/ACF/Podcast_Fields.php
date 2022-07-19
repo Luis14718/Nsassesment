@@ -8,7 +8,7 @@ acf_add_local_field_group(array(
             'key' => 'field_62d330f60f683',
             'label' => 'NS_Image',
             'name' => 'NS_image',
-            'type' => 'gallery',
+            'type' => 'image',
             'instructions' => '',
             'required' => 0,
             'conditional_logic' => 0,

@@ -4,7 +4,7 @@ require('Blog.php');
 require('Podcast.php');
 
 function create_posttype() {
-    register_post_type( 'Blog',
+   /*  register_post_type( 'Blog',
     // CPT Options
     array(
       'labels' => array(
@@ -15,8 +15,8 @@ function create_posttype() {
       'has_archive' => false,
       'rewrite' => array('slug' => 'Blog'),
      )
-    );
-    register_post_type( 'Podcast',
+    ); */
+   /*  register_post_type( 'Podcast',
     array(
   'labels' => array(
    'name' => __( 'Podcast' ),
@@ -26,7 +26,7 @@ function create_posttype() {
   'has_archive' => false,
   'rewrite' => array('slug' => 'Podcast'),
  )
-);
+); */
     }
     // add_action to add  function to the init at wp initialization 
     add_action( 'init', 'create_posttype' );

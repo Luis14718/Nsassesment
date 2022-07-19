@@ -8,7 +8,8 @@ function cw_post_type_Blog() {
     $supports = array(
     'title', 
     'editor',
-    'post-formats', 
+    'post-formats',
+    'author', 
     );
     $labels = array(
     'name' => _x('Blog', 'plural'),
@@ -29,13 +30,17 @@ function cw_post_type_Blog() {
     'labels' => $labels,
     'public' => true,
     'query_var' => true,
+    "show_in_rest" => true,
+	"rest_base" => "blog",
+	"rest_controller_class" => "WP_REST_Posts_Controller",
+	"rest_namespace" => "wp/v2",
     'rewrite' => array('slug' => 'Blog'),
     'has_archive' => true,
     'hierarchical' => false,
     );
     register_post_type('Blog', $args);
     }
-    add_action('init', 'cw_post_type_Blog');
+    add_action('init', 'cw_post_type_Blog'); 
 
 
    

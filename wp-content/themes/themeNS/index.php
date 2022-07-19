@@ -1,3 +1,2 @@
 <?php 
-echo "backend wp headless";
-exit;
+echo file_get_contents("front/index.html");
